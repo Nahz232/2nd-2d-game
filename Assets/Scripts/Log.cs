@@ -48,6 +48,11 @@ public class Player {
     {
         return this.vida <= 0;
     }
+
+    public bool IsAlive() {
+    	return this.vida > 0;    
+    }
+
     public override string ToString()
     {
         return this.team.teamName + " --> " + this.nombre + "[vida: " + this.vida + "; vel.:" + this.velocidad + "]";
